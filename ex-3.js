@@ -1,11 +1,18 @@
 function sortByRating(shops) {
-  // Start coding here
+  return shops.sort((a,b)=> b.rating - a.rating)
 }
 
 /* 
   1. ควรใช้ Algorithm ใดในการแก้โจทย์นี้ 
   2. ให้เหตุผลประกอบว่าทำไมถึงเลือกใช้ Algorithm นี้
   3. ให้ระบุว่า Big O Notation ของ Function นี้คือเท่าไร เพราะอะไร
+*/
+
+/* คำตอบ **
+  1. ใช้ .sort() ในการจัดเรียงอาร์เรย์
+  2. ใช้งานง่าย, ประสิทธิภาพดีในกรณีทั่วไป, โค้ดสั้น
+  3. Big O Notation คือ O(n log n) เพราะต้องทำการเปรียบเทียบและจัดเรียงข้อมูลในอาร์เรย์ทั้งหมด
+
 */
 
 const shops = [
